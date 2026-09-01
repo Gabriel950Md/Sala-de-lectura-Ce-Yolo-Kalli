@@ -115,6 +115,10 @@
         return view('comoserparte');
     })->name('comoserparte');
 
+    Route::get('audiolibros', function () {
+        return view('audiolibros');
+    })->name('audiolibros');
+
     // Route::get('conexion', function () {
     //     return view('conexion');
     // })->name('conexion');
@@ -176,9 +180,12 @@
         return view('post', ['post' => $post]);
     })->name('post');
 
+
     Route::post('Registrodonaciones', function(){
     return view('Registrodonaciones');
     })->name('Registrodonaciones');
+
+
 
     Route::post('conexion', function(){
         return view('conexion');

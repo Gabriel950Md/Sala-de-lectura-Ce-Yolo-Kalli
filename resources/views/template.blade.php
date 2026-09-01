@@ -188,6 +188,13 @@
                             <i class="fas fa-hands-helping"></i>¿Cómo ser parte?
                         </a>
                     </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom {{ request()->routeIs('audiolibros') ? 'active' : '' }}" 
+                           href="{{ route('audiolibros') }}">
+                            <i class="fas fa-headphones"></i>Audio Libros
+                        </a>
+                    </li>
                     
                     
                     <li class="nav-item">
